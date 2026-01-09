@@ -1,0 +1,59 @@
+.base {
+  appearance: none;
+  border: 1px solid var(--border);
+  background: var(--surface);
+  color: var(--fg);
+  border-radius: var(--radius-md);
+  padding: 10px 14px;
+  font-weight: 600;
+  line-height: 1;
+  cursor: pointer;
+  transition: transform 120ms ease, background 120ms ease, border-color 120ms ease, opacity 120ms ease;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+}
+
+/* ✅ No aplicar el hover genérico al primary */
+.base:not(.variant_primary):hover {
+  background: var(--surface-2);
+}
+
+.base:active {
+  transform: translateY(1px);
+}
+
+.base[data-disabled="true"],
+.base:disabled {
+  opacity: 0.55;
+  cursor: not-allowed;
+}
+
+.variant_primary {
+  background: var(--primary);
+  border-color: rgba(0, 0, 0, 0.12);
+  color: var(--primary-contrast);
+}
+
+/* ✅ Hover/active del primary con más especificidad que .base:hover */
+.base.variant_primary:hover {
+  filter: brightness(1.05);
+}
+
+.base.variant_primary:active {
+  filter: brightness(1.02);
+}
+
+.variant_ghost {
+  background: transparent;
+  border-color: transparent;
+}
+
+.variant_ghost:hover {
+  background: rgba(255, 255, 255, 0.06);
+}
+
+.size_sm { padding: 8px 12px; border-radius: var(--radius-sm); font-size: 13px; }
+.size_md { padding: 10px 14px; font-size: 14px; }
+.size_lg { padding: 12px 16px; font-size: 15px; }

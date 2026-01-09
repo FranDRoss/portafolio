@@ -1,0 +1,64 @@
+.root {
+  display: inline-flex;
+  gap: 6px;
+  padding: 0;
+  background: transparent;
+  border: none;
+  box-shadow: none;
+}
+
+.item {
+  all: unset;
+  cursor: pointer;
+  user-select: none;
+
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+
+  height: 36px;
+  padding: 0 12px;
+
+  border-radius: var(--radius-sm);
+  border: 1px solid transparent;
+
+  color: var(--fg);
+  background: transparent;
+
+  transition: background 120ms ease, border-color 120ms ease, transform 120ms ease, opacity 120ms ease;
+}
+
+.item:hover {
+  background: var(--surface-2);
+}
+
+.item:active {
+  transform: translateY(1px);
+}
+
+.item[data-state="on"] {
+  background: rgba(76, 141, 255, 0.18);
+  border-color: rgba(76, 141, 255, 0.35);
+}
+
+.item[data-disabled] {
+  cursor: not-allowed;
+}
+
+.item:focus-visible {
+  box-shadow: none;
+}
+
+.item:focus-visible:not([data-state="on"]) {
+  outline: 2px solid rgba(76, 141, 255, 0.45);
+  outline-offset: 2px;
+}
+
+.item[data-state="on"]:focus-visible {
+  outline: none;
+}
+
+.size_sm .item { height: 32px; padding: 0 10px; font-size: 13px; }
+.size_md .item { height: 36px; padding: 0 12px; font-size: 14px; }
+.size_lg .item { height: 40px; padding: 0 14px; font-size: 15px; }

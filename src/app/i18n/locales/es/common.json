@@ -1,0 +1,14 @@
+{
+    "global": {
+        "name": "Viestro"
+    },
+    "nav": {
+        "projects": "Proyectos",
+        "about": "Sobre mí",
+        "contact": "Contacto",
+        "canvas": "Canvas"
+    },
+    "footer": {
+        "built": "Hecho con React"
+    }
+}
