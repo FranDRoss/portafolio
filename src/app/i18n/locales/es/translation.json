@@ -1,0 +1,110 @@
+{
+    "common": {
+        "global": {
+            "name": "Daniel Horia Art"
+        },
+        "nav": {
+            "projects": "Proyectos",
+            "gallery": "Galería",
+            "about": "Sobre mí",
+            "contact": "Servicios"
+        },
+        "footer": {
+            "developedBy": "Desarrollado por ",
+            "builtWith": "Hecho con React"
+        },
+        "notFound": {
+            "title": "404 - Página No Encontrada",
+            "description": "Parece que esta página no existe o ha sido movida.",
+            "redirecting": "Redirigiendo a la página principal en {{seconds}} segundos...",
+            "button": "Ir al Inicio Ahora"
+        }
+    },
+    "home": {
+        "followInstagram": "Sigueme en Instagram",
+        "welcomeMessage": "¡Bienvenido a mi sitio web personal!"
+    },
+    "about": {
+        "bio": "Apasionado dibujante de cómics e ilustrador con un fuerte enfoque en la narrativa visual y el diseño de personajes.",
+        "skills": {
+            "title": "Habilidades"
+        },
+        "download": {
+            "aria": "Descargar portfolio en PDF",
+            "label": "Descargar Portfolio (PDF)"
+        }
+    },
+    "contact": {
+        "title": "Contacto editorial",
+        "subtitle": "Este formulario está pensado para <0>editoriales</0> o contactos profesionales relacionados con publicación.",
+        "altContact": {
+            "text": "Para cualquier otro tipo de contacto, mejor por ",
+            "platform": "Instagram"
+        },
+        "services": {
+            "title": "Servicios Disponibles",
+            "description": "Actualmente acepto encargos y trabajo freelance para editoriales y agencias creativas en las siguientes áreas:",
+            "items": {
+                "cover": "Portadas de Cómics y Variantes",
+                "sequential": "Arte Secuencial (Lápiz y Entintado)",
+                "character": "Diseño de Personajes y Desarrollo Visual",
+                "storyboard": "Guiones Gráficos (Storyboards) para Animación o Cine"
+            }
+        },
+        "form": {
+            "name": {
+                "label": "Nombre / Editorial",
+                "error": "El nombre es demasiado corto"
+            },
+            "email": {
+                "label": "Email",
+                "error": "Email inválido"
+            },
+            "company": {
+                "label": "Empresa / Sello (opcional)"
+            },
+            "subject": {
+                "label": "Asunto",
+                "error": "El asunto es demasiado corto"
+            },
+            "message": {
+                "label": "Mensaje",
+                "hint": "Incluye tipo de proyecto, plazos, país/idioma y forma de contacto.",
+                "error": "El mensaje debe tener al menos 20 caracteres"
+            },
+            "editorialInterest": {
+                "label": "Confirmo que este contacto es por interés editorial.",
+                "error": "Debes confirmar que el contacto es por interés editorial para poder enviar."
+            },
+            "submit": {
+                "idle": "Enviar",
+                "sending": "Enviando…"
+            }
+        },
+        "status": {
+            "success": "Mensaje enviado correctamente. Gracias.",
+            "error": "No se pudo enviar el mensaje. Inténtalo más tarde.",
+            "notConfigured": "El formulario no está configurado todavía. Contacta por Instagram."
+        }
+    },
+    "gallery": {
+        "seo": {
+            "title": "Galería de Ilustración",
+            "description": "Una colección seleccionada de ilustraciones, arte conceptual y portadas de cómics de Daniel Horia."
+        },
+        "title": "Galería de Ilustración",
+        "subtitle": "Una colección de ilustraciones individuales y conceptos."
+    },
+    "projects": {
+        "general": {
+            "information": "Información",
+            "characters": "Personajes",
+            "reviews": "Reseñas",
+            "where-to-buy": "Dónde comprar",
+            "comic": "Comics",
+            "collabs": "Colaboraciones",
+            "others": "Otros",
+            "my": "Mis obras"
+        }
+    }
+}

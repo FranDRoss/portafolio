@@ -1,0 +1,110 @@
+{
+    "common": {
+        "global": {
+            "name": "Daniel Horia Art"
+        },
+        "nav": {
+            "projects": "Proiecte",
+            "gallery": "Galerie",
+            "about": "Despre",
+            "contact": "Servicii"
+        },
+        "footer": {
+            "developedBy": "Dezvoltat de ",
+            "builtWith": "Construit cu React"
+        },
+        "notFound": {
+            "title": "404 - Pagina Nu a Fost Găsită",
+            "description": "Se pare că această pagină nu există sau a fost mutată.",
+            "redirecting": "Redirecționare către pagina principală în {{seconds}} secunde...",
+            "button": "Mergi la Acasă"
+        }
+    },
+    "home": {
+        "followInstagram": "Urmărește-mă pe Instagram",
+        "welcomeMessage": "Bine ai venit pe site-ul meu personal!"
+    },
+    "about": {
+        "bio": "Artist și ilustrator de benzi desenate pasionat, cu accent pe narațiunea vizuală și designul de personaje.",
+        "skills": {
+            "title": "Abilități"
+        },
+        "download": {
+            "aria": "Descarcă portofoliul PDF",
+            "label": "Descarcă Portofoliul (PDF)"
+        }
+    },
+    "contact": {
+        "title": "Contact editorial",
+        "subtitle": "Acest formular este destinat <0>editurilor</0> sau contactelor profesionale legate de publicare.",
+        "altContact": {
+            "text": "Pentru orice alt tip de contact, vă rugăm să folosiți ",
+            "platform": "Instagram"
+        },
+        "services": {
+            "title": "Servicii Disponibile",
+            "description": "În prezent accept comenzi și activități freelance pentru edituri și agenții de creație în următoarele domenii:",
+            "items": {
+                "cover": "Coperți de Benzi Desenate",
+                "sequential": "Artă Secvențială (Creion și Cerneală)",
+                "character": "Design de Personaje și Dezvoltare Vizuală",
+                "storyboard": "Storyboard pentru Animație sau Film"
+            }
+        },
+        "form": {
+            "name": {
+                "label": "Nume / Editură",
+                "error": "Numele este prea scurt"
+            },
+            "email": {
+                "label": "Email",
+                "error": "Adresă de email invalidă"
+            },
+            "company": {
+                "label": "Companie / Marcă (opțional)"
+            },
+            "subject": {
+                "label": "Subiect",
+                "error": "Subiectul este prea scurt"
+            },
+            "message": {
+                "label": "Mesaj",
+                "hint": "Vă rugăm să includeți tipul de proiect, termenele, țara/limba și datele de contact.",
+                "error": "Mesajul trebuie să aibă cel puțin 20 de caractere"
+            },
+            "editorialInterest": {
+                "label": "Confirm că acest contact este pentru interes editorial.",
+                "error": "Trebuie să confirmați interesul editorial pentru a trimite mesajul."
+            },
+            "submit": {
+                "idle": "Trimite",
+                "sending": "Se trimite…"
+            }
+        },
+        "status": {
+            "success": "Mesaj trimis cu succes. Mulțumesc.",
+            "error": "Mesajul nu a putut fi trimis. Vă rugăm să încercați din nou mai târziu.",
+            "notConfigured": "Formularul nu este încă configurat. Vă rugăm să contactați pe Instagram."
+        }
+    },
+    "gallery": {
+        "seo": {
+            "title": "Galerie de Ilustrații",
+            "description": "O colecție de ilustrații, artă conceptuală și coperți de benzi desenate de Daniel Horia."
+        },
+        "title": "Galerie de Ilustrații",
+        "subtitle": "O colecție de ilustrații și concepte individuale."
+    },
+    "projects": {
+        "general": {
+            "information": "Informații",
+            "characters": "Personaje",
+            "reviews": "Recenzii",
+            "where-to-buy": "Unde să cumperi",
+            "comic": "Benzi Desenate",
+            "collabs": "Colaborări",
+            "others": "Altele",
+            "my": "Lucrările Mele"
+        }
+    }
+}

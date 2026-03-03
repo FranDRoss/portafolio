@@ -1,0 +1,110 @@
+{
+    "common": {
+        "global": {
+            "name": "Daniel Horia Art"
+        },
+        "nav": {
+            "projects": "Projects",
+            "gallery": "Gallery",
+            "about": "About",
+            "contact": "Services"
+        },
+        "footer": {
+            "developedBy": "Desarrollado por ",
+            "builtWith": "Hecho con React"
+        },
+        "notFound": {
+            "title": "404 - Page Not Found",
+            "description": "It seems this page doesn't exist or has been moved.",
+            "redirecting": "Redirecting to the homepage in {{seconds}} seconds...",
+            "button": "Go Home Now"
+        }
+    },
+    "home": {
+        "followInstagram": "Follow me on Instagram",
+        "welcomeMessage": "Welcome to my personal website!"
+    },
+    "about": {
+        "bio": "Passionate comic book artist and illustrator with a strong focus on visual storytelling and character design.",
+        "skills": {
+            "title": "Skills"
+        },
+        "download": {
+            "aria": "Download PDF Portfolio",
+            "label": "Download PDF Portfolio"
+        }
+    },
+    "contact": {
+        "title": "Editorial contact",
+        "subtitle": "This form is intended for <0>publishers</0> or professional contacts related to publication.",
+        "altContact": {
+            "text": "For any other type of contact, please use ",
+            "platform": "Instagram"
+        },
+        "services": {
+            "title": "Available Services",
+            "description": "I am currently accepting commissions and freelance work for publishers and creative agencies in the following areas:",
+            "items": {
+                "cover": "Comic Book Covers & Variant Arts",
+                "sequential": "Sequential Art (Pencilling & Inking)",
+                "character": "Character Design & Visual Development",
+                "storyboard": "Storyboarding for Animation or Film"
+            }
+        },
+        "form": {
+            "name": {
+                "label": "Name / Publisher",
+                "error": "Name is too short"
+            },
+            "email": {
+                "label": "Email",
+                "error": "Invalid email address"
+            },
+            "company": {
+                "label": "Company / Imprint (optional)"
+            },
+            "subject": {
+                "label": "Subject",
+                "error": "Subject is too short"
+            },
+            "message": {
+                "label": "Message",
+                "hint": "Please include project type, timeline, country/language and contact details.",
+                "error": "The message must be at least 20 characters long"
+            },
+            "editorialInterest": {
+                "label": "I confirm that this contact is for editorial interest.",
+                "error": "You must confirm editorial interest in order to send the message."
+            },
+            "submit": {
+                "idle": "Send",
+                "sending": "Sending…"
+            }
+        },
+        "status": {
+            "success": "Message sent successfully. Thank you.",
+            "error": "The message could not be sent. Please try again later.",
+            "notConfigured": "The form is not configured yet. Please contact via Instagram."
+        }
+    },
+    "gallery": {
+        "seo": {
+            "title": "Illustration Gallery",
+            "description": "A curated collection of illustrations, concept art, and comic covers by Daniel Horia."
+        },
+        "title": "Illustration Gallery",
+        "subtitle": "A collection of standalone illustrations and concepts."
+    },
+    "projects": {
+        "general": {
+            "information": "Information",
+            "characters": "Characters",
+            "reviews": "Reviews",
+            "where-to-buy": "Where to buy",
+            "comic": "Comics",
+            "collabs": "Collaborations",
+            "others": "Others",
+            "my": "My Works"
+        }
+    }
+}

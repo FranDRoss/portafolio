@@ -1,0 +1,83 @@
+/* productReviews.module.css */
+
+.root {
+    width: 100%;
+    --accent-color: #6b6b6b;
+
+    /* pastel suave basado en accent */
+    --bubble-bg: color-mix(in srgb, var(--accent-color) 14%, white);
+    --bubble-border: color-mix(in srgb, var(--accent-color) 28%, white);
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+/* FILA: siempre 100% ancho */
+.reviewRow {
+    width: 100%;
+    display: flex;
+    justify-content: flex-start; /* izquierda por defecto */
+}
+
+/* alternancia */
+.reviewRow:nth-child(even) {
+    justify-content: flex-end;
+}
+
+/* BURBUJA */
+.reviewBubble {
+    width: min(820px, 100%);
+    background: var(--bubble-bg);
+    border: 1px solid var(--bubble-border);
+    border-radius: 18px;
+    padding: 14px 16px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.04);
+}
+
+/* tipografía */
+.reviewTitle {
+    margin: 0;
+    font-weight: 800;
+    color: var(--text-primary, #111);
+}
+
+.reviewOwnership {
+    margin: 6px 0 0;
+    color: var(--text-secondary, #555);
+}
+
+.reviewSubtitle {
+    margin: 6px 0 0;
+    color: var(--text-secondary, #555);
+    min-height: 1.5em;
+}
+
+.reviewDescription {
+    margin: 12px 0 0;
+    color: var(--text-primary, #111);
+    white-space: pre-wrap;
+}
+
+/* fallback sin color-mix */
+@supports not (color: color-mix(in srgb, white, black)) {
+    .root {
+        --bubble-bg: rgba(0, 0, 0, 0.03);
+        --bubble-border: rgba(0, 0, 0, 0.08);
+    }
+}
+
+/* móvil: sin alternar */
+@media (max-width: 640px) {
+    .reviewRow,
+    .reviewRow:nth-child(even) {
+        justify-content: stretch;
+    }
+
+    .reviewBubble {
+        width: 100%;
+    }
+}

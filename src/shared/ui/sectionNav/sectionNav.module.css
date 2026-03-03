@@ -1,0 +1,87 @@
+.root {
+    width: 100%;
+    margin: 0.75rem 0 1rem;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.06);
+
+    /* accent */
+    --accent-color: #8ecdf4;
+
+    /* pastel suave */
+    --accent-bg: color-mix(in srgb, var(--accent-color) 18%, white);
+    --accent-bg-hover: color-mix(in srgb, var(--accent-color) 28%, white);
+}
+
+.sticky {
+  position: sticky;
+  top: var(--header-offset, 72px);
+  z-index: 45;
+}
+
+.inner {
+    width: 100%;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0.5rem 1rem;
+
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
+
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.85);
+    backdrop-filter: blur(8px);
+}
+
+.btn {
+    border: none;
+    background: transparent;
+    cursor: pointer;
+
+    padding: 0.55rem 0.8rem;
+    border-radius: 999px;
+
+    font-weight: 800;
+    color: var(--text-primary, #111);
+    white-space: nowrap;
+
+    transition: background 120ms ease, color 120ms ease;
+}
+
+.btn:hover {
+    background: var(--accent-bg-hover);
+}
+
+.btnActive {
+    background: var(--accent-bg);
+    color: var(--text-primary, #111);
+}
+
+.btn:hover {
+    background: var(--accent-bg-hover);
+}
+
+.btn:focus-visible {
+    outline: 2px solid var(--text-primary, #111);
+    outline-offset: 2px;
+}
+
+/* Mobile */
+@media (max-width: 520px) {
+    .inner {
+        padding: 0.45rem 0.75rem;
+        border-radius: 18px;
+    }
+}
+
+@media (max-width: 720px) {
+  .sticky {
+    position: static;
+  }
+}
+
+@supports not (color: color-mix(in srgb, white, black)) {
+    .root {
+        --accent-bg: rgba(142, 205, 244, 0.25);
+        --accent-bg-hover: rgba(142, 205, 244, 0.35);
+    }
+}

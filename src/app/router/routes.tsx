@@ -3,9 +3,11 @@ import { createBrowserRouter, Navigate } from "react-router-dom";
 import Layout from "@/app/layout/Layout";
 import HomePage from "@/pages/Home/HomePage";
 import ProjectsPage from "@/pages/Projects/ProjectsPage";
-import CanvasPage from "@/pages/Canvas/CanvasPage"
-// import ProjectDetailPage from "@/pages/Projects/ProjectDetailPage";
+import ContactPage from "@/pages/Contact/ContactPage";
+import ProjectDetailPage from "@/pages/Projects/ProjectDetail/ProjectDetailPage";
 import AboutPage from "@/pages/About/AboutPage";
+import NotFoundPage from "@/pages/NotFound/NotFoundPage";
+import GalleryPage from "@/pages/Gallery/GalleryPage";
 // import ContactPage from "@/pages/Contact/ContactPage";
 // import NotFoundPage from "@/pages/NotFound/NotFoundPage";
 
@@ -28,13 +30,12 @@ export const router = createBrowserRouter(
       children: [
         { index: true, element: <HomePage /> },
         { path: "projects", element: <ProjectsPage /> },
-        // { path: "projects/:id", element: <ProjectDetailPage /> },
+        { path: "projects/:id", element: <ProjectDetailPage /> },
+        { path: "gallery", element: <GalleryPage /> },
         { path: "about", element: <AboutPage /> },
-        { path: "canvas", element: <CanvasPage /> },
-
-        // { path: "contact", element: <ContactPage /> },
+        { path: "contact", element: <ContactPage /> },
         { path: "home", element: <Navigate to="/" replace /> },
-        // { path: "*", element: <NotFoundPage /> },
+        { path: "*", element: <NotFoundPage /> }
       ],
     },
   ],

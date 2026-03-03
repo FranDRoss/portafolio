@@ -11,9 +11,11 @@
   will-change: filter;
   transition: filter 300ms;
 }
+
 .logo:hover {
   filter: drop-shadow(0 0 2em #646cffaa);
 }
+
 .logo.react:hover {
   filter: drop-shadow(0 0 2em #61dafbaa);
 }
@@ -22,6 +24,7 @@
   from {
     transform: rotate(0deg);
   }
+
   to {
     transform: rotate(360deg);
   }
@@ -39,4 +42,46 @@
 
 .read-the-docs {
   color: #888;
+}
+
+.card:hover {
+  border-color: #646cff;
+}
+
+.card:active {
+  background-color: #f9f9f9;
+}
+
+.intro {
+  text-align: center;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+@media (min-width: 768px) {
+  .intro {
+    text-align: left;
+    margin-bottom: 2rem;
+  }
+}
+
+.contentGrid {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  max-width: 1024px;
+  margin: 0 auto;
+}
+
+.newsSection,
+.socialSection {
+  width: 100%;
+}
+
+.bannerWrap {
+  margin-bottom: 2rem;
+}
+
+.bannerTitle {
+  font-size: 1.5rem;
 }

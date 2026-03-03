@@ -1,0 +1,53 @@
+.bannerMargin {
+    margin-top: 16px;
+}
+
+.bannerNoTextShadow {
+    text-shadow: none !important;
+}
+
+.bannerLine {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+
+    width: 100%;
+    margin: 0;
+
+    font-weight: 800;
+    text-align: center;
+    color: var(--text-primary, #111);
+}
+
+.bannerLine::before,
+.bannerLine::after {
+  content: "";
+  flex: 1;
+  height: 1px;
+
+  background: linear-gradient(
+    to right,
+    transparent,
+    var(--accent-color, black),
+    transparent
+  );
+
+  box-shadow:
+    0 0 6px color-mix(in srgb, var(--accent-color, black) 55%, white),
+    0 0 12px color-mix(in srgb, var(--accent-color, black) 30%, white);
+}
+
+/* invierte el gradiente a la derecha */
+.bannerLine::after {
+  background: linear-gradient(
+    to left,
+    transparent,
+    var(--accent-color, black),
+    transparent
+  );
+}
+
+/* el texto queda limpio, sin glow */
+.bannerLine > span {
+  white-space: nowrap;
+}

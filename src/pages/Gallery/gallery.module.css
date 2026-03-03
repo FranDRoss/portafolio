@@ -1,0 +1,55 @@
+.page {
+    padding: clamp(2rem, 5vw, 4rem) var(--spacing-md, 1rem);
+    max-width: 1400px;
+    margin: 0 auto;
+    min-height: calc(100vh - 200px);
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.title {
+    font-size: clamp(2.5rem, 5vw, 3.5rem);
+    font-weight: 800;
+    margin: 0 0 0.5rem 0;
+    color: var(--color-text-primary, #111);
+    letter-spacing: -0.02em;
+}
+
+.subtitle {
+    font-size: clamp(1.1rem, 2vw, 1.25rem);
+    color: var(--color-text-secondary, #555);
+    margin: 0;
+}
+
+.flexGallery {
+    margin-top: 3rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.imageEl {
+    display: block;
+    max-width: 100%;
+    /* Strict height limit so images never outgrow a laptop/phone screen */
+    max-height: 75vh;
+    width: auto;
+    object-fit: contain;
+    border-radius: 8px;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275), filter 0.3s ease, box-shadow 0.3s ease;
+    will-change: transform;
+}
+
+.imageEl:hover {
+    transform: scale(1.02) translateY(-4px);
+    filter: brightness(0.9);
+    box-shadow: 0 16px 32px rgba(0, 0, 0, 0.15);
+    z-index: 10;
+}

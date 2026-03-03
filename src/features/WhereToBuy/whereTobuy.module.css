@@ -1,0 +1,92 @@
+/* WhereToBuy.module.css */
+
+.root {
+    width: 100%;
+    --accent-color: #8ecdf4;
+    --bg: color-mix(in srgb, var(--accent-color) 12%, white);
+    --bd: color-mix(in srgb, var(--accent-color) 24%, white);
+    --hover: color-mix(in srgb, var(--accent-color) 18%, white);
+    border: 1px solid var(--bd);
+    background: var(--bg);
+    border-radius: 18px;
+    padding: 14px 16px;
+}
+
+.label {
+    margin: 0 0 10px;
+    font-weight: 800;
+    color: var(--text-primary, #111);
+}
+
+.groups {
+    display: grid;
+    gap: 14px;
+}
+
+.groupTitle {
+    margin: 0 0 8px;
+    font-weight: 800;
+    color: var(--text-primary, #111);
+    font-size: 0.95rem;
+}
+
+.list {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+}
+
+
+.link {
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    text-decoration: none;
+    font-weight: 800;
+    color: var(--text-primary, #111);
+    padding: 10px 12px;
+    border-radius: 999px;
+    background: rgba(255, 255, 255, 0.75);
+    border: 1px solid rgba(0, 0, 0, 0.06);
+    transition: background 120ms ease, transform 120ms ease;
+}
+
+.link:hover {
+    background: var(--hover);
+    transform: translateY(-1px);
+}
+
+.muted {
+    margin: 0;
+    color: var(--text-secondary, #555);
+}
+
+.error {
+    margin: 0;
+    color: #8a1f1f;
+    font-weight: 700;
+}
+
+.errorTitle {
+    margin: 0 0 8px;
+    color: #8a1f1f;
+    font-weight: 800;
+}
+
+.errorList {
+    margin: 0 0 10px;
+    padding-left: 18px;
+    color: #8a1f1f;
+}
+
+@supports not (color: color-mix(in srgb, white, black)) {
+    .root {
+        background: rgba(0, 0, 0, 0.03);
+        border-color: rgba(0, 0, 0, 0.08);
+    }
+}

@@ -1,0 +1,175 @@
+/* src/shared/ui/banner/Banner.module.css */
+
+.wrap {
+  width: 100%;
+  margin: 0 0 1rem;
+}
+
+.container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 0 1rem;
+}
+
+/* The banner itself: centered, not full-bleed */
+.banner {
+  position: relative;
+  width: 100%;
+  border-radius: var(--banner-radius, 20px);
+  overflow: hidden;
+
+  /* background fallback */
+  background: var(--banner-bg, #f3f4f6);
+
+  display: grid;
+  align-items: end;
+
+  /* defaults (sm is base) */
+  min-height: var(--banner-min-h, 80px);
+}
+
+/* Background layer */
+.bg {
+  position: absolute;
+  inset: 0;
+  display: block;
+  pointer-events: none;
+}
+
+.bgImg {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+  transform: scale(1.02); /* subtle, avoids hairline gaps */
+}
+
+/* Overlay for readability */
+.overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, var(--banner-overlay-opacity, 0.35));
+}
+
+/* Text content */
+.content {
+  position: relative;
+  padding: var(--banner-pad-y, 1.25rem) var(--banner-pad-x, 1.25rem);
+  padding-bottom: var(--banner-pad-b, 1.2rem);
+}
+
+.banner[data-align="center"] .content {
+  text-align: center;
+}
+
+.banner[data-align="left"] .content {
+  text-align: left;
+}
+
+/* Title */
+.title {
+  margin: 0;
+  color: var(--banner-title-color, #fff);
+  letter-spacing: -0.02em;
+  font-weight: 900;
+  font-size: var(--banner-title-size, clamp(1.35rem, 2.2vw, 2.1rem));
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.35);
+}
+
+/* Subtitle */
+.subtitle {
+  margin: 0.35rem 0 0;
+  color: var(--banner-subtitle-color, rgba(255, 255, 255, 0.92));
+  font-weight: 600;
+  font-size: var(--banner-subtitle-size, clamp(0.95rem, 1.6vw, 1.15rem));
+  text-shadow: 0 2px 14px rgba(0, 0, 0, 0.25);
+}
+
+/* -----------------------
+   SIZE VARIANTS
+   sm = base default
+------------------------ */
+
+/* XXS — section header (prácticamente solo texto) */
+.banner[data-size="xxs"] {
+  --banner-min-h: 40px;
+  --banner-radius: 12px;
+
+  --banner-pad-y: 0.25rem;
+  --banner-pad-x: 0.5rem;
+  --banner-pad-b: 0.25rem;
+
+  /* small “section title” look */
+  --banner-title-size: 1rem;
+  --banner-subtitle-size: 0.85rem;
+}
+
+/* XS — compacto */
+.banner[data-size="xs"] {
+  --banner-min-h: 56px;
+  --banner-radius: 16px;
+
+  --banner-pad-y: 0.6rem;
+  --banner-pad-x: 0.8rem;
+  --banner-pad-b: 0.55rem;
+
+  --banner-title-size: clamp(1.15rem, 1.8vw, 1.4rem);
+  --banner-subtitle-size: clamp(0.9rem, 1.4vw, 1.05rem);
+}
+
+/* SM — BASE */
+.banner[data-size="sm"] {
+  --banner-min-h: 80px;
+  --banner-radius: 20px;
+
+  --banner-pad-y: 1.25rem;
+  --banner-pad-x: 1.25rem;
+  --banner-pad-b: 1.2rem;
+
+  --banner-title-size: clamp(1.35rem, 2.2vw, 2.1rem);
+  --banner-subtitle-size: clamp(0.95rem, 1.6vw, 1.15rem);
+}
+
+/* MD */
+.banner[data-size="md"] {
+  --banner-min-h: 160px;
+  --banner-radius: 22px;
+
+  --banner-pad-y: 1.6rem;
+  --banner-pad-x: 1.6rem;
+  --banner-pad-b: 1.55rem;
+
+  --banner-title-size: clamp(1.75rem, 2.9vw, 2.75rem);
+  --banner-subtitle-size: clamp(1.1rem, 2vw, 1.35rem);
+}
+
+/* LG */
+.banner[data-size="lg"] {
+  --banner-min-h: 220px;
+  --banner-radius: 24px;
+
+  --banner-pad-y: 2rem;
+  --banner-pad-x: 2rem;
+  --banner-pad-b: 1.9rem;
+
+  --banner-title-size: clamp(2rem, 3.2vw, 3.2rem);
+  --banner-subtitle-size: clamp(1.15rem, 2.1vw, 1.45rem);
+}
+
+/* Responsive sizing */
+@media (min-width: 640px) {
+  .content {
+    padding: calc(var(--banner-pad-y, 1.25rem) + 0.15rem)
+      calc(var(--banner-pad-x, 1.25rem) + 0.35rem);
+    padding-bottom: calc(var(--banner-pad-b, 1.2rem) + 0.2rem);
+  }
+}
+
+@media (min-width: 1024px) {
+  .banner {
+    border-radius: var(--banner-radius, 24px);
+  }
+}
+
+/* If you want a “color-only” banner, keep images undefined and it will use bgColor */

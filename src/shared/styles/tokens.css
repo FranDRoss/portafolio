@@ -42,7 +42,7 @@
 
 @media (prefers-color-scheme: light) {
   :root {
-    --bg: #f7f8fb;
+    --bg: #fcfcfc;
     --fg: #0b1220;
     --muted-fg: #49576a;
 

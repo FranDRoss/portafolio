@@ -1,0 +1,110 @@
+{
+    "common": {
+        "global": {
+            "name": "Daniel Horia Art"
+        },
+        "nav": {
+            "projects": "Projets",
+            "gallery": "Galerie",
+            "about": "À propos",
+            "contact": "Services"
+        },
+        "footer": {
+            "developedBy": "Développé par ",
+            "builtWith": "Construit avec React"
+        },
+        "notFound": {
+            "title": "404 - Page Non Trouvée",
+            "description": "Il semble que cette page n'existe pas ou ait été déplacée.",
+            "redirecting": "Redirection vers la page d'accueil dans {{seconds}} secondes...",
+            "button": "Retourner à l'Accueil"
+        }
+    },
+    "home": {
+        "followInstagram": "Suis-moi sur Instagram",
+        "welcomeMessage": "Bienvenue sur mon site web personnel!"
+    },
+    "about": {
+        "bio": "Dessinateur de BD et illustrateur passionné, spécialisé dans la narration visuelle et le design de personnages.",
+        "skills": {
+            "title": "Compétences"
+        },
+        "download": {
+            "aria": "Télécharger le portfolio PDF",
+            "label": "Télécharger le Portfolio (PDF)"
+        }
+    },
+    "contact": {
+        "title": "Contact éditorial",
+        "subtitle": "Ce formulaire est destiné aux <0>éditeurs</0> ou aux contacts professionnels liés à la publication.",
+        "altContact": {
+            "text": "Pour tout autre type de contact, veuillez utiliser ",
+            "platform": "Instagram"
+        },
+        "services": {
+            "title": "Services Disponibles",
+            "description": "J'accepte actuellement les commandes et le travail freelance pour les éditeurs et les agences créatives dans les domaines suivants :",
+            "items": {
+                "cover": "Couvertures de Bandes Dessinées",
+                "sequential": "Art Séquentiel (Dessin et Encrage)",
+                "character": "Conception de Personnages et Développement Visuel",
+                "storyboard": "Story-board pour l'Animation ou le Film"
+            }
+        },
+        "form": {
+            "name": {
+                "label": "Nom / Éditeur",
+                "error": "Le nom est trop court"
+            },
+            "email": {
+                "label": "E-mail",
+                "error": "Adresse e-mail invalide"
+            },
+            "company": {
+                "label": "Entreprise / Label (facultatif)"
+            },
+            "subject": {
+                "label": "Sujet",
+                "error": "Le sujet est trop court"
+            },
+            "message": {
+                "label": "Message",
+                "hint": "Veuillez inclure le type de projet, les délais, le pays/la langue et les coordonnées.",
+                "error": "Le message doit comporter au moins 20 caractères"
+            },
+            "editorialInterest": {
+                "label": "Je confirme que ce contact est d'intérêt éditorial.",
+                "error": "Vous devez confirmer l'intérêt éditorial pour envoyer le message."
+            },
+            "submit": {
+                "idle": "Envoyer",
+                "sending": "Envoi en cours…"
+            }
+        },
+        "status": {
+            "success": "Message envoyé avec succès. Merci.",
+            "error": "Le message n'a pas pu être envoyé. Veuillez réessayer plus tard.",
+            "notConfigured": "Le formulaire n'est pas encore configuré. Veuillez contacter via Instagram."
+        }
+    },
+    "gallery": {
+        "seo": {
+            "title": "Galerie d'Illustration",
+            "description": "Une collection d'illustrations, d'art conceptuel et de couvertures de bandes dessinées par Daniel Horia."
+        },
+        "title": "Galerie d'Illustration",
+        "subtitle": "Une collection d'illustrations autonomes et de concepts."
+    },
+    "projects": {
+        "general": {
+            "information": "Information",
+            "characters": "Personnages",
+            "reviews": "Avis",
+            "where-to-buy": "Où acheter",
+            "comic": "Bandes Dessinées",
+            "collabs": "Collaborations",
+            "others": "Autres",
+            "my": "Mes Œuvres"
+        }
+    }
+}

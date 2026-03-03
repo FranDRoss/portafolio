@@ -1,9 +1,13 @@
 @import "./tokens.css";
 
-* { box-sizing: border-box; }
+* {
+  box-sizing: border-box;
+}
 
-html, body {
+html,
+body {
   height: 100%;
+  scrollbar-gutter: stable;
 }
 
 body {
@@ -13,7 +17,9 @@ body {
   color: var(--fg);
 }
 
-a { color: inherit; }
+a {
+  color: inherit;
+}
 
 :focus-visible {
   outline: none;
@@ -23,4 +29,9 @@ a { color: inherit; }
 
 ::selection {
   background: rgba(76, 141, 255, 0.25);
+}
+
+:root {
+  --text-primary: #111;
+  --text-secondary: #555;
 }

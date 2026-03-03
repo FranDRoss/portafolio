@@ -2,26 +2,24 @@ import i18n from "i18next";
 import { initReactI18next } from "react-i18next";
 import LanguageDetector from "i18next-browser-languagedetector";
 
-import commonES from "./locales/es/common.json";
-import homeES from "./locales/es/home.json";
-import aboutES from "./locales/es/about.json";
-import projectsES from "./locales/es/projects.json";
-import commonEN from "./locales/en/common.json";
-import homeEN from "./locales/en/home.json";
-import aboutEN from "./locales/en/home.json";
-import projectsEN from "./locales/en/projects.json";
+import transES from "./locales/es/translation.json";
+import transEN from "./locales/en/translation.json";
+import transFR from "./locales/fr/translation.json";
+import transRO from "./locales/ro/translation.json";
 
 i18n
   .use(LanguageDetector)
   .use(initReactI18next)
   .init({
     fallbackLng: "es",
-    supportedLngs: ["es", "en"],
-    ns: ["common", "home"],
-    defaultNS: "common",
+    supportedLngs: ["es", "en", "fr", "ro"],
+    ns: ["translation"],
+    defaultNS: "translation",
     resources: {
-      es: { common: commonES, home: homeES, about: aboutES, projects: projectsES },
-      en: { common: commonEN, home: homeEN, about: aboutEN, projects: projectsEN },
+      es: { translation: transES },
+      en: { translation: transEN },
+      fr: { translation: transFR },
+      ro: { translation: transRO },
     },
     detection: {
       order: ["localStorage", "navigator"],

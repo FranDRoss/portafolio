@@ -1,0 +1,51 @@
+/* src/shared/ui/instagram-grid/InstagramGrid.module.css */
+
+.grid {
+  display: grid;
+  gap: var(--ig-gap, 12px);
+
+  /* Responsive automático sin columnas fijas */
+  grid-template-columns: repeat(
+    auto-fit,
+    minmax(min(var(--ig-min, 320px), 100%), 1fr)
+  );
+
+  align-items: start;
+  justify-content: center;
+}
+
+.cell {
+  width: 100%;
+  min-width: 0;
+}
+
+.error {
+  color: crimson;
+}
+
+/**
+ * Importante:
+ * - Instagram inyecta un iframe con estilos propios.
+ * - Aquí forzamos el contenedor (blockquote) a ser fluido.
+ * - Para afectar al iframe interno a veces hace falta CSS global (no siempre).
+ */
+.embed {
+  width: 100% !important;
+  max-width: 100% !important;
+  min-width: 0 !important;
+
+  margin: 0 !important;
+  border: 0 !important;
+  border-radius: 12px;
+  overflow: hidden;
+
+  background: #fff;
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.15), 0 6px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+/* Mobile: reduce el mínimo para que no “rompa” */
+@media (max-width: 640px) {
+  .grid {
+    grid-template-columns: 1fr;
+  }
+}
