@@ -14,6 +14,7 @@ import "yet-another-react-lightbox/plugins/captions.css";
 
 // Supabase client
 import { supabase } from "@/shared/lib/supabase";
+import { Loader } from "@/shared/ui/loader/Loader";
 
 export default function GalleryPage() {
     const { t, i18n } = useTranslation();
@@ -63,7 +64,7 @@ export default function GalleryPage() {
             </header>
 
             {loading ? (
-                <div style={{ textAlign: "center", marginTop: "4rem" }}>Loading gallery...</div>
+                <Loader />
             ) : (
                 <div className={styles.flexGallery}>
                     {translatedPhotos.map((photo, i) => (

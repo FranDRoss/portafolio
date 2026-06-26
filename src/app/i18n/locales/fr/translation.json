@@ -27,7 +27,13 @@
     "about": {
         "bio": "Dessinateur de BD et illustrateur passionné, spécialisé dans la narration visuelle et le design de personnages.",
         "skills": {
-            "title": "Compétences"
+            "title": "Compétences",
+            "list": {
+                "illustration": "Illustration",
+                "comicArt": "Bande Dessinée",
+                "characterDesign": "Design de Personnages",
+                "storyboarding": "Story-board"
+            }
         },
         "download": {
             "aria": "Télécharger le portfolio PDF",

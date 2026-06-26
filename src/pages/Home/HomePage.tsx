@@ -5,6 +5,7 @@ import { InstagramGrid } from '@/features/InstagramPosts/InstagramPosts';
 import { supabase } from '@/shared/lib/supabase';
 import { HomeNews } from '@/features/HomeNews/HomeNews';
 import Banner from '@/shared/ui/banner/Banner';
+import { Loader } from '@/shared/ui/loader/Loader';
 
 function HomePage() {
   const { t } = useTranslation();
@@ -41,6 +42,9 @@ function HomePage() {
     }
     fetchHomeData();
   }, []);
+  if (loading) {
+    return <Loader />;
+  }
 
   return (
     <div className={styles.homeContainer}>
@@ -51,6 +55,22 @@ function HomePage() {
       <div className={styles.contentGrid}>
         <section className={styles.newsSection}>
           {news.length > 0 && <HomeNews news={news} />}
+        </section>
+
+        <section className={styles.gameSection}>
+          <section className={styles.gameSection}>
+            <iframe
+              key="capka-game-v2"
+              src="https://chimerical-piroshki-f47a36.netlify.app/"
+              title="Capka Jump Game"
+              width="100%"
+              height="400px"
+              frameBorder="0"
+              scrolling="no"
+              sandbox="allow-scripts allow-same-origin allow-popups"
+              style={{ border: 'none', overflow: 'hidden', display: 'block', margin: '0 auto' }}
+            />
+          </section>
         </section>
 
         <section className={styles.socialSection}>

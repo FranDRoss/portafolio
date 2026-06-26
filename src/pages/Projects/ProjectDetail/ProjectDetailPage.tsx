@@ -10,6 +10,7 @@ import ProductReviews from '@/features/ProductReviews/ProductReviews';
 import WhereToBuy from '@/features/WhereToBuy/WhereToBuy';
 import { supabase } from "@/shared/lib/supabase";
 import * as React from "react";
+import { Loader } from "@/shared/ui/loader/Loader";
 
 function ProjectDetailPage() {
   const { id } = useParams<{ id: string }>();
@@ -77,7 +78,7 @@ function ProjectDetailPage() {
     fetchProjectData();
   }, [id]);
 
-  if (loading) return null;
+  if (loading) return <Loader />;
   if (!id || !project) return <Navigate to="/projects" replace />;
 
   const title = project.title?.[currentLang] || project.title?.["en"] || project.id;

@@ -7,7 +7,7 @@ const AUTHOR_DATA = {
   role: "Comic Book Artist / Illustrator",
   bioKey: "bio", // key in translation file
   profileImage: "https://nqaibtucwzlxbnelvcjg.supabase.co/storage/v1/object/public/images/danie_horia_portrait.jpg",
-  skills: ["Illustration", "Comic Art", "Character Design", "Storyboarding"],
+  skills: ["illustration", "comicArt", "characterDesign", "storyboarding"],
   experience: [
     { titleKey: "exp1.title", year: "2023 - Present" },
     { titleKey: "exp2.title", year: "2018 - 2023" }
@@ -37,7 +37,7 @@ function AboutPage() {
             <h3>{t('about.skills.title', { defaultValue: 'Skills' })}</h3>
             <ul className={styles.skillsList}>
               {AUTHOR_DATA.skills.map(skill => (
-                <li key={skill} className={styles.skillItem}>{skill}</li>
+                <li key={skill} className={styles.skillItem}>{t(`about.skills.list.${skill}`)}</li>
               ))}
             </ul>
           </div>

@@ -27,7 +27,13 @@
     "about": {
         "bio": "Artist și ilustrator de benzi desenate pasionat, cu accent pe narațiunea vizuală și designul de personaje.",
         "skills": {
-            "title": "Abilități"
+            "title": "Abilități",
+            "list": {
+                "illustration": "Ilustrație",
+                "comicArt": "Bandă Desenată",
+                "characterDesign": "Design de Personaje",
+                "storyboarding": "Storyboard"
+            }
         },
         "download": {
             "aria": "Descarcă portofoliul PDF",

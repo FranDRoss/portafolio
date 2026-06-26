@@ -27,7 +27,13 @@
     "about": {
         "bio": "Apasionado dibujante de cómics e ilustrador con un fuerte enfoque en la narrativa visual y el diseño de personajes.",
         "skills": {
-            "title": "Habilidades"
+            "title": "Habilidades",
+            "list": {
+                "illustration": "Ilustración",
+                "comicArt": "Arte de Cómic",
+                "characterDesign": "Diseño de Personajes",
+                "storyboarding": "Storyboarding"
+            }
         },
         "download": {
             "aria": "Descargar portfolio en PDF",

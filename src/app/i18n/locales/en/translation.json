@@ -10,8 +10,8 @@
             "contact": "Services"
         },
         "footer": {
-            "developedBy": "Desarrollado por ",
-            "builtWith": "Hecho con React"
+            "developedBy": "Developed by ",
+            "builtWith": "Built with React"
         },
         "notFound": {
             "title": "404 - Page Not Found",
@@ -27,7 +27,13 @@
     "about": {
         "bio": "Passionate comic book artist and illustrator with a strong focus on visual storytelling and character design.",
         "skills": {
-            "title": "Skills"
+            "title": "Skills",
+            "list": {
+                "illustration": "Illustration",
+                "comicArt": "Comic Art",
+                "characterDesign": "Character Design",
+                "storyboarding": "Storyboarding"
+            }
         },
         "download": {
             "aria": "Download PDF Portfolio",

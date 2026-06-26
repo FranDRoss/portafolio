@@ -85,3 +85,13 @@
 .bannerTitle {
   font-size: 1.5rem;
 }
+
+.gameSection {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .gameSection {
+    display: block;
+  }
+}

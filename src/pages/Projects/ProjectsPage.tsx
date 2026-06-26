@@ -6,6 +6,7 @@ import ImageCarousel from "@/shared/ui/image-carousel/ImageCarousel";
 import { supabase } from "@/shared/lib/supabase";
 import * as React from "react";
 import type { ProjectData } from "@/shared/types/project";
+import { Loader } from "@/shared/ui/loader/Loader";
 
 function ProjectsPage() {
   const { t, i18n } = useTranslation();
@@ -34,7 +35,7 @@ function ProjectsPage() {
     fetchProjects();
   }, []);
 
-  if (loading) return null;
+  if (loading) return <Loader />;
 
   const items: { id: string; label: string }[] = [];
 
