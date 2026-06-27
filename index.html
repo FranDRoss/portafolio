@@ -1,14 +1,50 @@
 <!doctype html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>portafolio</title>
-    <script type="module" crossorigin src="/assets/index-C9XiMkWh.js"></script>
-    <link rel="stylesheet" crossorigin href="/assets/index-DbYuR7Ru.css">
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
+
+<head>
+  <meta charset="UTF-8" />
+  
+  <!-- El script del truco de las rutas (Mantenlo siempre arriba del todo) -->
+  <script>
+    (function (l) {
+      if (l.search[1] === 'p') {
+        var pairs = l.search.slice(1).split('&');
+        var query = {};
+        pairs.forEach(function (pair) {
+          var parts = pair.split('=');
+          query[parts[0]] = decodeURIComponent(parts[1] || '').replace(/~and~/g, '&');
+        });
+        if (query.p !== undefined) {
+          window.history.replaceState(null, null, l.pathname.slice(0, -1) + query.p + (l.hash || ''));
+        }
+      }
+    }(window.location));
+  </script>
+
+  <title>Daniel Horia | Comic Artist & Concept Artist Portfolio</title>
+  <meta name="description" content="Official portfolio of Daniel Horia, comic artist and concept artist. Explore artwork, comic projects, and creative illustrations." />
+  <meta name="keywords" content="Daniel Horia, comic artist, concept artist, illustrator, comic book art, portfolio, drawing, character design" />
+  <meta name="author" content="Daniel Horia" />
+  <meta name="robots" content="index, follow" />
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Daniel Horia | Comic Artist & Concept Artist" />
+  <meta property="og:description" content="Explore the official portfolio of Daniel Horia. Comic book art, character design, and concept art." />
+  <meta property="og:url" content="https://danielhoria.com/" />
+  <meta property="og:image" content="https://danielhoria.com/images/horia-daniel-big_circle.webp" />
+
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Daniel Horia | Comic Artist & Concept Artist" />
+  <meta name="twitter:description" content="Official portfolio of comic artist and concept artist Daniel Horia." />
+
+  <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script type="module" crossorigin src="/assets/index-LyUHDTcO.js"></script>
+  <link rel="stylesheet" crossorigin href="/assets/index-DbYuR7Ru.css">
+</head>
+
+<body>
+  <div id="root"></div>
+</body>
+
 </html>
